@@ -1,0 +1,13 @@
+CREATE TABLE covid_data (
+    id SERIAL PRIMARY KEY ,
+    country VARCHAR(100),
+    country_code VARCHAR(3),
+    continent VARCHAR(50),
+    population INTEGER,
+    indicator VARCHAR(50),
+    weekly_count INTEGER,
+    rate_14_day FLOAT,
+    cumulative_count INTEGER,
+	year_ INTEGER,
+	week_ INTEGER
+);
