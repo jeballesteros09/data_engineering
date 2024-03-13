@@ -11,3 +11,32 @@ CREATE TABLE covid_data (
 	year_ INTEGER,
 	week_ INTEGER
 );
+
+CREATE TABLE IF NOT EXISTS public.countries_of_the_world
+(
+    id integer NOT NULL,
+    "Country" text COLLATE pg_catalog."default",
+    "Region" text COLLATE pg_catalog."default",
+    "Population" bigint,
+    "Area (sq. mi.)" bigint,
+    "Pop. Density (per sq. mi.)" double precision,
+    "Coastline (coast/area ratio)" double precision,
+    "Net migration" double precision,
+    "Infant mortality (per 1000 births)" double precision,
+    "GDP ($ per capita)" double precision,
+    "Literacy (%)" double precision,
+    "Phones (per 1000)" double precision,
+    "Arable (%)" double precision,
+    "Crops (%)" double precision,
+    "Other (%)" double precision,
+    "Climate" double precision,
+    "Birthrate" double precision,
+    "Deathrate" double precision,
+    "Agriculture" double precision,
+    "Industry" double precision,
+    "Service" double precision,
+    CONSTRAINT countries_of_the_world_pkey PRIMARY KEY (id)
+);
+
+
+
